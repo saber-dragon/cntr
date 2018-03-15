@@ -7,6 +7,7 @@ mod docker;
 mod nspawn;
 mod rkt;
 mod lxc;
+mod lxd;
 
 pub trait Container: Debug {
     fn lookup(&self, id: &str) -> Result<Pid>;
